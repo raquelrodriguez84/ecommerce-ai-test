@@ -1,0 +1,12 @@
+[
+    {"id":1,"name":"Zapatillas RunFast 200","price":89.99,"category":"deportes","description":"Ligera y transpirable para carrera urbana.","rating":4.5},
+    {"id":2,"name":"Camiseta DryFit Pro","price":24.5,"category":"ropa","description":"Camiseta técnica de secado rápido.","rating":4.2},
+    {"id":3,"name":"Auriculares BassPlus","price":59.0,"category":"electronica","description":"Sonido potente y cancelación parcial.","rating":4.0},
+    {"id":4,"name":"Reloj SportX","price":129.99,"category":"electronica","description":"Monitor de ritmo cardíaco y GPS.","rating":4.6},
+    {"id":5,"name":"Mochila Trail 20L","price":49.0,"category":"accesorios","description":"Compacta, resistente al agua.","rating":4.3},
+    {"id":6,"name":"Zapatillas CasualStep","price":74.0,"category":"deportes","description":"Cómodas para uso diario.","rating":4.1},
+    {"id":7,"name":"Gafas Sol UV400","price":19.99,"category":"accesorios","description":"Protección total UV.","rating":3.9},
+    {"id":8,"name":"Cámara ActionCam 4K","price":199.0,"category":"electronica","description":"4K estable, resistente al agua.","rating":4.4},
+    {"id":9,"name":"Calcetines RunGrip","price":9.99,"category":"ropa","description":"Agarre interior y acolchado.","rating":4.0},
+    {"id":10,"name":"Chaqueta WindBlock","price":89.0,"category":"ropa","description":"Cortaviento y ligera.","rating":4.5}
+  ]

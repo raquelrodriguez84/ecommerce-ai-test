@@ -1,0 +1,179 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Contenedor principal */
+.app-container {
+  
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 2rem;
+  color: #dbcccc;
+}
+
+/* Filtros */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filters label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: #dbcccc;
+}
+
+.filters select,
+.filters input[type="number"] {
+  padding: 0.5rem 0.75rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  margin: 0.5rem;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de productos */
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Tarjeta de producto */
+.card {
+  background-color: #fff;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.star {
+  margin-right: 0.2rem;
+}
+
+.ratingNumber {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+
+/* Responsive para móviles */
+@media (max-width: 48em) {
+  .app-container {
+    margin: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 18.75em;
+  }
+}
+@media (min-width: 70em) {
+  .products-list {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr)); /* Más columnas en pantallas grandes */
+    gap: 2rem; /* Aumenta el espacio entre las tarjetas */
+    max-width: 87.5em; /* Aumenta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+
+  .card {
+    max-width: 18.75em; /* Aumenta el tamaño máximo de las tarjetas */
+    padding: 2rem; /* Más espacio interno en las tarjetas */
+  }
+
+  .name {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto del nombre */
+  }
+
+  .price {
+    font-size: 1.4rem; /* Aumenta el tamaño del texto del precio */
+  }
+
+  .description {
+    font-size: 1.1rem; /* Aumenta el tamaño del texto de la descripción */
+  }
+}
+@media (min-width: 48em) and (max-width: 74.9375em) { /* 768px - 1199px */
+  .products-list {
+    grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas */
+    gap: 1.5rem; /* Espaciado entre las tarjetas */
+    max-width: 62.5em; /* 1000px -> 62.5em */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+
+  .card {
+    max-width: 17.5em; /* 280px -> 17.5em */
+    padding: 1.5rem; /* Espacio interno moderado */
+  }
+
+  .name {
+    font-size: 1.4rem; /* Ajusta el tamaño del texto del nombre */
+  }
+
+  .price {
+    font-size: 1.3rem; /* Ajusta el tamaño del texto del precio */
+  }
+
+  .description {
+    font-size: 1rem; /* Mantén el tamaño del texto de la descripción */
+  }
+}
